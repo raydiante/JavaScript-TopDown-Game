@@ -1,0 +1,117 @@
+<!-- Jogo Desenvolvido por
+          Rayssa Rosa - 180100523
+          Taua Almeida - 180100527 
+          Elder Costa - 180100528     
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.8.1-web/css/all.min.css">
+    <script src="maps.js"> </script>
+    <script src="game.js"></script>
+    <title>Estanislau e o Mistério de Jam Bolão</title>
+</head>
+
+<body>
+
+    <div id="side-panel">
+        <button id="volumeOff" class="volumeButton"> <i id="soundControl" class="fas fa-volume-up"></i> </button>   
+        <div id="inner-side-panel">
+            <p>Precisas de 3 chaves para abrir a porta de madeira</p>
+            <p>Uma chave abre porta de pedra</p>   
+            <p>Question fornece 3 possibilidades:</p>
+            <p>+ 25 de vida; Imunidade (5s); Poder (mata zumbi)</p>
+            <p>Chaves acumuladas dão 5 pontos cada</p>
+            <p>Ossos podem tirar vida</p>
+            <p>Ossos que não tiram vida, dão 15 pontos</p>
+            <p>Sua vida conta pontos! (cuide dela)</p>
+            <br>
+            <div id="side-panelPoints"><!-- Painel informativo de Pontos--></div>
+        </div>
+    </div>
+
+    <div id="stage"><!-- palco do jogo --></div>
+    <div id="infoPanel"><!-- Painel informativo --></div>
+    
+    <audio id="somDeFundo">
+        <source src="audio/atmosphere.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="takeKey"  >
+        <source src="audio/takeKey.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="takeBones"  >
+        <source src="audio/takeBones.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="question"  >
+        <source src="audio/question.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="openWoodDoor"  >
+        <source src="audio/openWoodDoor.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="openStoneDoor"  >
+        <source src="audio/openStoneDoor.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="immunity"  >
+        <source src="audio/immunity.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="deathZombie"  >
+        <source src="audio/deathZombie.mp3" type="audio/mpeg">
+    </audio> 
+    <audio id="stairsUp"  >
+        <source src="audio/stairsUp.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="winGame"  >
+      <source src="audio/winGame.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="killZombie"  >
+        <source src="audio/killZombie.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameOver"  >
+      <source src="audio/gameOver.mp3" type="audio/mpeg">
+  </audio>
+    
+    <div id="startModal" class="startModal">
+
+        <div class="startModal-content">
+          <div>
+            <p>
+              O Jogo:
+            </p>
+            <p>
+              Use as setas para andar
+            </p>
+            <p>
+              Pontos de interrogação podem fornecer benificios
+            </p>
+            <p>
+              Ossos podem ser letais
+            </p>
+            <p>
+              Zombies matam!!
+            </p>
+            <p>
+              Colete chaves para abrir as portas
+            </p>
+          </div>
+          <button id="buttonStart" class="myButton">APERTE PARA COMEÇAR</button>
+        </div>
+    </div>
+
+
+    <div id="endModal" class="endModal">
+      <div class="endModal-content">
+        <div id="inEndModal">
+
+        </div>
+        <button id="buttonEnd" class="myButton">APERTE PARA RECOMEÇAR</button>
+      </div>
+    </div>
+    
+</body>
+
+</html>
